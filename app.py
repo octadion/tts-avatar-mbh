@@ -20,7 +20,7 @@ voicelist = {
 
 avatarlist = {
     "Male": "https://img.okezone.com/okz/500/library/images/2022/12/21/1mo2vtplcl96obrc2v6q_19511.jpg",
-    "Female": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/2023/04/03/Azizi-Zee-1774448471.jpeg"
+    "Female": "https://image.popmama.com/content-images/post/20220927/fakta-keluarga-zee-jkt48-punya-kembaran-laki-laki-dan-ayah-zee-jkt-48-artis-presenter-aktor-fadli-akhmad-0b166b4faa8fa475cf88a8e3142edecd.jpg"
 }
 
 def generate_audio(prompt, voice_id):
@@ -68,7 +68,7 @@ def generate_video(audio_path, avatar_url, gender):
     headers = {
         "accept": "application/json",
         "content-type": "application/json",
-        "Authorization" : os.getenv("API_KEY_DID")
+        "Authorization" : "Basic " + os.getenv("API_KEY_DID")
     }
     payload = {
         "script": {
